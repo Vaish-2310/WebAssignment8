@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Edit Destination</title>
+</head>
+<body>
+    <header>
+        <h1>Edit Destination</h1>
+    </header>
+    <main>
+        <form id="edit-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="bestSeason">Best Season to Visit</label>
+            <input type="text" id="bestSeason" name="bestSeason" required>
+
+            <label for="attractions">Top Attractions</label>
+            <input type="text" id="attractions" name="attractions" required>
+
+            <label for="cost">Approximate Cost</label>
+            <input type="text" id="cost" name="cost" pattern="^\$\d+(-\$\d+)?$" placeholder="e.g., $5000 or $5000-$9000" required>
+
+            <button type="submit">Update</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
