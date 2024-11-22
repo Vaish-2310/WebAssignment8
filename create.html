@@ -13,22 +13,20 @@
     <main>
         <form id="create-form">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
+            <input type="text" id="name" name="name" required placeholder="Destination Name">
+
             <label for="country">Country</label>
-            <input type="text" id="country" name="country" required>
-            
+            <input type="text" id="country" name="country" required placeholder="Country Name">
+
             <label for="bestSeason">Best Season to Visit</label>
-            <input type="text" id="bestSeason" name="bestSeason" required>
-            
+            <input type="text" id="bestSeason" name="bestSeason" required placeholder="e.g., June-August">
+
             <label for="attractions">Top Attractions</label>
-            <input type="text" id="attractions" name="attractions" required>
-            
+            <input type="text" id="attractions" name="attractions" required placeholder="e.g., Beaches, Temples">
+
             <label for="cost">Approximate Cost</label>
-            <input type="text" id="cost" name="cost" pattern="^\$\d+(-\$\d+)?$" placeholder="e.g., $5000 or $5000-$9000" required>
+            <input type="text" id="cost" name="cost" required placeholder="e.g., $5000 or $5000-$9000">
 
-
-            
             <button type="submit">Submit</button>
         </form>
     </main>
